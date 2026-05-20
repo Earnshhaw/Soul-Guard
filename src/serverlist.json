@@ -1,0 +1,109 @@
+{
+  "regions": [
+    {
+      "name": "US West (Oregon)",
+      "endpoint": "us-west-2.amazonaws",
+      "ping_check": "gamelift-ping.us-west-2.api.aws"
+    },
+    {
+      "name": "US East (N. Virginia)",
+      "endpoint": "us-east-1.amazonaws",
+      "ping_check": "gamelift-ping.us-east-1.api.aws"
+    },
+    {
+      "name": "US East (Ohio)",
+      "endpoint": "us-east-2.amazonaws",
+      "ping_check": "gamelift-ping.us-east-2.api.aws"
+    },
+    {
+      "name": "US West (N. California)",
+      "endpoint": "us-west-1.amazonaws",
+      "ping_check": "gamelift-ping.us-west-1.api.aws"
+    },
+    {
+      "name": "Canada (Central)",
+      "endpoint": "ca-central-1.amazonaws",
+      "ping_check": "gamelift-ping.ca-central-1.api.aws"
+    },
+    {
+      "name": "South America (Sao Paulo)",
+      "endpoint": "sa-east-1.amazonaws",
+      "ping_check": "gamelift-ping.sa-east-1.api.aws"
+    },
+    {
+      "name": "Europe (Ireland)",
+      "endpoint": "eu-west-1.amazonaws",
+      "ping_check": "gamelift-ping.eu-west-1.api.aws"
+    },
+    {
+      "name": "Europe (London)",
+      "endpoint": "eu-west-2.amazonaws",
+      "ping_check": "gamelift-ping.eu-west-2.api.aws"
+    },
+    {
+      "name": "Europe (Frankfurt)",
+      "endpoint": "eu-central-1.amazonaws",
+      "ping_check": "gamelift-ping.eu-central-1.api.aws"
+    },
+    {
+      "name": "Asia Pacific (Tokyo)",
+      "endpoint": "ap-northeast-1.amazonaws",
+      "ping_check": "gamelift-ping.ap-northeast-1.api.aws"
+    },
+    {
+      "name": "Asia Pacific (Seoul)",
+      "endpoint": "ap-northeast-2.amazonaws",
+      "ping_check": "gamelift-ping.ap-northeast-2.api.aws"
+    },
+    {
+      "name": "Asia Pacific (Singapore)",
+      "endpoint": "ap-southeast-1.amazonaws",
+      "ping_check": "gamelift-ping.ap-southeast-1.api.aws"
+    },
+    {
+      "name": "Asia Pacific (Sydney)",
+      "endpoint": "ap-southeast-2.amazonaws",
+      "ping_check": "gamelift-ping.ap-southeast-2.api.aws"
+    },
+    {
+      "name": "Asia Pacific (Hong Kong)",
+      "endpoint": "ap-east-1.amazonaws",
+      "ping_check": "gamelift-ping.ap-east-1.api.aws"
+    },
+    {
+      "name": "Asia Pacific (Mumbai)",
+      "endpoint": "ap-south-1.amazonaws",
+      "ping_check": "gamelift-ping.ap-south-1.api.aws"
+    },
+    {
+      "name": "Europe (Paris)",
+      "endpoint": "eu-west-3.amazonaws",
+      "ping_check": "gamelift-ping.eu-west-3.api.aws"
+    },
+    {
+      "name": "Europe (Stockholm)",
+      "endpoint": "eu-north-1.amazonaws",
+      "ping_check": "gamelift-ping.eu-north-1.api.aws"
+    },
+    {
+      "name": "Europe (Milan)",
+      "endpoint": "eu-south-1.amazonaws",
+      "ping_check": "gamelift-ping.eu-south-1.api.aws"
+    },
+    {
+      "name": "Middle East (Bahrain)",
+      "endpoint": "me-south-1.amazonaws",
+      "ping_check": "gamelift-ping.me-south-1.api.aws"
+    },
+    {
+      "name": "China (Beijing)",
+      "endpoint": "cn-north-1.amazonaws",
+      "ping_check": ""
+    },
+    {
+      "name": "China (Ningxia)",
+      "endpoint": "cn-northwest-1.amazonaws",
+      "ping_check": ""
+    }
+  ]
+}
