@@ -1,5 +1,3 @@
-
-
 use iced::{
     Border, Color, Shadow, Vector,
     widget::{
@@ -7,7 +5,6 @@ use iced::{
         scrollable::{self, AutoScroll, Rail, Scroller, Status as ScrollStatus},
     },
 };
-
 
 pub const BG_BASE: Color = Color::from_rgb(0.055, 0.059, 0.067); // #0E0F11
 pub const BG_SURFACE: Color = Color::from_rgb(0.086, 0.094, 0.106); // #16181B
@@ -21,8 +18,6 @@ pub const TEXT_MUTED: Color = Color::from_rgb(0.42, 0.455, 0.502); // #6B7480
 
 pub const BORDER_SUBTLE: Color = Color::from_rgb(0.165, 0.18, 0.204); // #2A2E34
 pub const BORDER_ACCENT: Color = ACCENT;
-
-
 
 pub fn app_background(theme: &iced::Theme) -> container::Style {
     let _ = theme;
@@ -38,8 +33,6 @@ pub fn app_background(theme: &iced::Theme) -> container::Style {
         snap: false,
     }
 }
-
-
 
 pub fn primary_button(theme: &iced::Theme, status: button::Status) -> button::Style {
     let _ = theme;
@@ -99,8 +92,6 @@ pub fn primary_button(theme: &iced::Theme, status: button::Status) -> button::St
     }
 }
 
-
-
 pub fn ghost_button(theme: &iced::Theme, status: button::Status) -> button::Style {
     let _ = theme;
     match status {
@@ -157,8 +148,6 @@ pub fn ghost_button(theme: &iced::Theme, status: button::Status) -> button::Styl
     }
 }
 
-
-
 pub fn modern_checkbox(theme: &iced::Theme, status: checkbox::Status) -> checkbox::Style {
     let _ = theme;
     match status {
@@ -209,8 +198,6 @@ pub fn modern_checkbox(theme: &iced::Theme, status: checkbox::Status) -> checkbo
         },
     }
 }
-
-
 
 fn make_rail(scroller_color: Color) -> Rail {
     Rail {

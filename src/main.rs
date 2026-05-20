@@ -3,9 +3,9 @@
 mod gui;
 use gui::State;
 
-use iced::{Font, Size, window};
+use iced::{Font, Size};
 
-use std::{fs, io};
+use std::fs;
 mod style;
 use serde::Deserialize;
 
@@ -28,12 +28,12 @@ struct ServerRaw {
     ping_check: String,
 }
 
-fn read_serverlist() -> Vec<Server> {
-    let contents =
-        std::fs::read_to_string("serverlist.json").expect("Failed to read serverlist.json");
+const ICON_BYTES: &[u8] = include_bytes!("icon.ico");
+const SERVER_LIST: &str = include_str!("serverlist.json");
 
+fn read_serverlist() -> Vec<Server> {
     let data: ServerList =
-        serde_json::from_str(&contents).expect("Failed to parse serverlist.json");
+        serde_json::from_str(&SERVER_LIST).expect("Failed to parse serverlist.json");
 
     data.regions
         .into_iter()
@@ -80,9 +80,6 @@ pub fn write_to_host_file(servers: &Vec<Server>, selected_server: &Server) {
 }
 
 fn main() -> iced::Result {
-    env_logger::init();
-    let icon = window::icon::from_file_data(include_bytes!("../icon.png"), None);
-
     iced::application(
         || State {
             servers: read_serverlist(),
@@ -94,14 +91,14 @@ fn main() -> iced::Result {
     .title("Soul Guard")
     .window_size(Size::new(388.00, 580.00))
     .decorations(true)
-    .resizable(false)
-    .window(window::Settings {
-        icon: Some(icon.unwrap()),
+    .window(iced::window::Settings {
+        icon: Some(iced::window::icon::from_file_data(ICON_BYTES, None).expect("Invalid icon")),
         ..Default::default()
     })
     .default_font(Font {
         family: iced::font::Family::Monospace,
         ..Font::DEFAULT
     })
+    .resizable(false)
     .run()
 }
