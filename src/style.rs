@@ -17,7 +17,6 @@ pub const TEXT_PRIMARY: Color = Color::from_rgb(0.918, 0.929, 0.941); // #EAEDF0
 pub const TEXT_MUTED: Color = Color::from_rgb(0.42, 0.455, 0.502); // #6B7480
 
 pub const BORDER_SUBTLE: Color = Color::from_rgb(0.165, 0.18, 0.204); // #2A2E34
-pub const BORDER_ACCENT: Color = ACCENT;
 
 pub fn app_background(theme: &iced::Theme) -> container::Style {
     let _ = theme;
